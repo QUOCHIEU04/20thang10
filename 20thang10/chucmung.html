@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 20/10</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffebcd;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #ff1493;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite, color-change 4s infinite;
+        }
+        .message {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+            animation: sparkle 3s infinite, float 4s ease-in-out infinite;
+        }
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            animation: swing 3s ease-in-out infinite, shake 2s infinite;
+        }
+        .petal {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff1493;
+            border-radius: 50%;
+            animation: spin 5s linear infinite, twinkle 1.5s ease-in-out infinite;
+        }
+        .petal1 { top: 0; left: 50%; transform: translateX(-50%); }
+        .petal2 { right: 0; top: 50%; transform: translateY(-50%); }
+        .petal3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+        .petal4 { left: 0; top: 50%; transform: translateY(-50%); }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            background-color: #ff4500;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 1.5s infinite, color-rotate 3s linear infinite;
+        }
+        /* Animations */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes sparkle {
+            0%, 100% { color: #555; }
+            50% { color: #ff1493; }
+        }
+        @keyframes color-change {
+            0%, 100% { color: #ff1493; }
+            50% { color: #1e90ff; }
+        }
+        @keyframes swing {
+            0% { transform: rotate(-10deg); }
+            50% { transform: rotate(10deg); }
+            100% { transform: rotate(-10deg); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes color-rotate {
+            0%, 100% { background-color: #ff4500; }
+            50% { background-color: #32cd32; }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chúc mừng ngày Phụ Nữ Việt Nam 20/10!</h1>
+        <p class="message">Chúc bạn có một ngày thật vui vẻ, hạnh phúc và đầy yêu thương.</p>
+        <div class="flower">
+            <div class="petal petal1"></div>
+            <div class="petal petal2"></div>
+            <div class="petal petal3"></div>
+            <div class="petal petal4"></div>
+            <div class="center"></div>
+        </div>
+    </div>
+</body>
+</html>
